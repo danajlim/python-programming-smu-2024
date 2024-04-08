@@ -5,3 +5,12 @@
 # 단 월은 1-4월까지만 처리함
 # 윤년은 계산하지 않음 (2월은 무조건 28일)
 # 1-4월과 다른 달이 입력되면 아무것도 하지 않음
+
+month=input("월을 입력하세요 (첫글자를 대문자로 써주세요): ")
+
+if month=="Feburary":
+    print("28일까지 있습니다.")
+elif month=="January" and month=="March":
+    print("31일까지 있습니다.")
+elif month=="April":
+    print("30일까지 있습니다.")
